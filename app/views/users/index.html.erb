@@ -1,0 +1,122 @@
+<!-- <p><i class="far fa-smile-beam fa-3x"></i></p> -->
+
+
+<br>
+<%= form_with model: @user, local: true do |f| %>
+	<div class="form-row">
+		<div class="col">
+			<%= f.label :name, class:"sr-only", for:"inlineFormInputGroup"%><br>
+	    <div class="input-group mb-2">
+	      <div class="input-group-prepend">
+	        <div class="input-group-text"><i class="fas fa-user"></i></div>
+	      </div>
+        <%= f.text_field :name, class: "form-control", id:"inlineFormInputGroup" ,placeholder:"Name" %>
+	    </div>
+	  </div>
+	  <br>
+		<div class="col">
+			<%= f.label :email, class:"sr-only", for:"inlineFormInputGroup"%><br>
+	    <div class="input-group mb-2">
+	      <div class="input-group-prepend">
+	        <div class="input-group-text"><i class="far fa-envelope"></i></div>
+	      </div>
+        <%= f.text_field :email, class: "form-control", id:"inlineFormInputGroup" ,placeholder:"Email" %>
+	    </div>
+	  </div>
+  </div>
+  <br>
+  <div class="form-row">
+		<div class="col">
+			<%= f.label :company, class:"sr-only", for:"inlineFormInputGroup"%><br>
+	    <div class="input-group mb-2">
+	      <div class="input-group-prepend">
+	        <div class="input-group-text"><i class="fas fa-building"></i></div>
+	      </div>
+        <%= f.text_field :company, class: "form-control", id:"inlineFormInputGroup" ,placeholder:"Company" %>
+	    </div>
+	  </div>
+	  <br>
+		<div class="col">
+			<%= f.label :company_email, class:"sr-only", for:"inlineFormInputGroup"%><br>
+	    <div class="input-group mb-2">
+	      <div class="input-group-prepend">
+	        <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+	      </div>
+        <%= f.text_field :company_email, class: "form-control", id:"inlineFormInputGroup" ,placeholder:"Company Email" %>
+	    </div>
+	  </div>
+  </div>
+  <br>
+  <div class="form-row">
+		<div class="col">
+			<%= f.label :company_address, class:"sr-only", for:"inlineFormInputGroup"%><br>
+	    <div class="input-group mb-2">
+	      <div class="input-group-prepend">
+	        <div class="input-group-text"><i class="fas fa-address-card"></i></div>
+	      </div>
+        <%= f.text_field :company_address, class: "form-control", id:"inlineFormInputGroup" ,placeholder:"Company Address" %>
+	    </div>
+	  </div>
+	  <br>
+		<div class="col">
+			<%= f.label :company_telephone, class:"sr-only", for:"inlineFormInputGroup"%><br>
+	    <div class="input-group mb-2">
+	      <div class="input-group-prepend">
+	        <div class="input-group-text"><i class="fas fa-tty"></i></div>
+	      </div>
+	     	<%= f.number_field :company_telephone, class: "form-control", id:"inlineFormInputGroup" ,placeholder:"Comp-Telephone" %>
+	    </div>
+	  </div>
+  </div>
+  <br>
+  <div class="form-row">
+	  <div class="col">
+			<%= f.label :facebook, class:"sr-only", for:"inlineFormInputGroup"%><br>
+	    <div class="input-group mb-2">
+	      <div class="input-group-prepend">
+	        <div class="input-group-text"><i class="fab fa-facebook-f"></i></div>
+	      </div>
+	     	<%= f.text_field :facebook, class: "form-control", id:"inlineFormInputGroup" ,placeholder:"Facebook" %>
+	    </div>
+	  </div>
+	  <div class="col">
+			<%= f.label :twitter, class:"sr-only", for:"inlineFormInputGroup"%><br>
+	    <div class="input-group mb-2">
+	      <div class="input-group-prepend">
+	        <div class="input-group-text"><i class="fab fa-twitter"></i></div>
+	      </div>
+	     	<%= f.text_field :twitter, class: "form-control", id:"inlineFormInputGroup" ,placeholder:"Twitter" %>
+	    </div>
+	  </div>
+  </div>
+  <br>
+  <div class="form-row">
+	  <div class="col">
+			<%= f.label :github, class:"sr-only", for:"inlineFormInputGroup"%><br>
+	    <div class="input-group mb-2">
+	      <div class="input-group-prepend">
+	        <div class="input-group-text"><i class="fab fa-github"></i></div>
+	      </div>
+ 	     	<%= f.text_field :github, class: "form-control", id:"inlineFormInputGroup" ,placeholder:"Github" %>
+	    </div>
+	  </div>
+	  <br>	
+	  <div class="col">
+			<%= f.label :instagram, class:"sr-only", for:"inlineFormInputGroup"%><br>
+	    <div class="input-group mb-2">
+	      <div class="input-group-prepend">
+	        <div class="input-group-text"><i class="fab fa-instagram"></i></div>
+	      </div>
+	     	<%= f.text_field :instagram, class: "form-control", id:"inlineFormInputGroup" ,placeholder:"Instagram" %>
+	    </div>
+	  </div>
+  </div>
+  <br>
+  <div class="col">
+  	<%= f.submit "Create", class: "btn btn-outline-success my-2 my-sm-0" %>
+  </div>
+<% end %>
+
+
+
+

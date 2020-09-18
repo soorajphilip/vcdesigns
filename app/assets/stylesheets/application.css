@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+@import '@fortawesome/fontawesome-free';
+@import 'users.scss'
+font-family: 'Pacifico', cursive;
+
+.name {
+	font-family: 'Pacifico', cursive;
+}
+
+/*.bg-img {
+	width: 100%;
+	height: 230px;
+	opacity: 0.3;
+}*/
+
+.head-info {
+	background-color: #c4ffff;
+}
+
+.display-3 {
+	font-family: 'Pacifico', cursive;
+	text-align: right;
+
+}
